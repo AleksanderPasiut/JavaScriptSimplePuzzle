@@ -1,0 +1,44 @@
+a:link
+{
+	color: #00CC77;
+	text-decoration: none;
+}
+
+a:hover
+{
+	color: #00CC77;
+	text-decoration: underline;
+}
+
+a:visited
+{
+	color: #00CC77;
+	text-decoration: none;
+}
+
+a:unvisited
+{
+	color: #00CC77;
+	text-decoration: none;
+}
+
+div.title
+{
+	color: #00AA55;
+	font-family: Sylfaen;
+	font-size: 20pt;
+}
+
+div.main
+{
+	color: #00AA55;
+	font-family: Sylfaen;
+	font-size: 14pt;
+	margin-left: 30px;
+	margin-right: 30px;
+}
+
+#status
+{
+	color: #CC3333;
+}

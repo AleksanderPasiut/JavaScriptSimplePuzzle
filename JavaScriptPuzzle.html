@@ -1,0 +1,47 @@
+<html>
+<title>Java Script Puzzle</title>
+
+<head>
+<link rel="stylesheet" type="text/css" href="style.css">
+<script type="text/javascript" src="script.js"></script>
+</head>
+
+<body bgcolor="004422" onLoad="Init()">
+<div align="center" class="title">Java Script Puzzle</div>
+<hr color="#00AA55">
+
+<div class="main">
+This is a simple puzzle game implemented in JavaScript. Player's task is to set the puzzles below in ascending order using empty space. Ultimately, empty space is supposed to be placed in the bottom right corner.<br />
+<br />
+<a href="#" onClick="Scramble()">Click to scramble the puzzles.</a><br />
+<br />
+</div>
+
+<div align="center">
+<table><tr><td>
+<a href="#" onClick="Change(0, 0)"><img src="PctSet\Pct01.png" name="spot00" border = 0 hspace = 0 vspace = 0 /></a>
+<a href="#" onClick="Change(0, 1)"><img src="PctSet\Pct02.png" name="spot01" border = 0 hspace = 0 vspace = 0 /></a>
+<a href="#" onClick="Change(0, 2)"><img src="PctSet\Pct03.png" name="spot02" border = 0 hspace = 0 vspace = 0 /></a>
+<a href="#" onClick="Change(0, 3)"><img src="PctSet\Pct04.png" name="spot03" border = 0 hspace = 0 vspace = 0 /></a><br />
+<a href="#" onClick="Change(1, 0)"><img src="PctSet\Pct05.png" name="spot10" border = 0 hspace = 0 vspace = 0 /></a>
+<a href="#" onClick="Change(1, 1)"><img src="PctSet\Pct06.png" name="spot11" border = 0 hspace = 0 vspace = 0 /></a>
+<a href="#" onClick="Change(1, 2)"><img src="PctSet\Pct07.png" name="spot12" border = 0 hspace = 0 vspace = 0 /></a>
+<a href="#" onClick="Change(1, 3)"><img src="PctSet\Pct08.png" name="spot13" border = 0 hspace = 0 vspace = 0 /></a><br />
+<a href="#" onClick="Change(2, 0)"><img src="PctSet\Pct09.png" name="spot20" border = 0 hspace = 0 vspace = 0 /></a>
+<a href="#" onClick="Change(2, 1)"><img src="PctSet\Pct10.png" name="spot21" border = 0 hspace = 0 vspace = 0 /></a>
+<a href="#" onClick="Change(2, 2)"><img src="PctSet\Pct11.png" name="spot22" border = 0 hspace = 0 vspace = 0 /></a>
+<a href="#" onClick="Change(2, 3)"><img src="PctSet\Pct12.png" name="spot23" border = 0 hspace = 0 vspace = 0 /></a><br />
+<a href="#" onClick="Change(3, 0)"><img src="PctSet\Pct13.png" name="spot30" border = 0 hspace = 0 vspace = 0 /></a>
+<a href="#" onClick="Change(3, 1)"><img src="PctSet\Pct14.png" name="spot31" border = 0 hspace = 0 vspace = 0 /></a>
+<a href="#" onClick="Change(3, 2)"><img src="PctSet\Pct15.png" name="spot32" border = 0 hspace = 0 vspace = 0 /></a>
+<a href="#" onClick="Change(3, 3)"><img src="PctSet\Pct16.png" name="spot33" border = 0 hspace = 0 vspace = 0 /></a>
+</td></tr></table>
+</div>
+
+<div class="main">
+<br />
+Currently the puzzles are <span id="status">SCRAMBLED</span>.
+</div>
+
+</body>
+</html>
