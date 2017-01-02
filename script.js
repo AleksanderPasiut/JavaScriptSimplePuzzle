@@ -84,7 +84,22 @@ function CheckForWin()
 	}
 }
 
-function Scramble()
+var MODE = { EUROPE : 0, SPIDER : 1 };
+function ChangeMode(new_mode)
 {
+	board = [ [1,2,3,4],[5,6,7,8],[9,10,11,12],[13,14,15,16] ];
+	
+	for (var i = 0; i < 4; i++)
+		for (var j = 0; j < 4; j++)
+			switch(new_mode)
+			{
+			case MODE.EUROPE: document.images['spot'+i+j].src = ".\\PctSet\\europe\\Pct"+i+j+".png"; break;
+			case MODE.SPIDER: document.images['spot'+i+j].src = ".\\PctSet\\spider\\Pct"+i+j+".png"; break;
+			}
+}
+
+function Scramble(new_mode)
+{
+	ChangeMode(new_mode);
 	Randomize();
 }
